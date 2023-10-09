@@ -1,0 +1,20 @@
+version: "3.5"
+
+services:
+  server:
+    build: .
+    restart: always
+    network_mode: bridge
+    #networks:
+    #  - bridge
+    ports:
+      - "80"
+    volumes:
+      - ${PWD}/cdn:/app/cdn
+      - ${PWD}/zip:/app/zip
+      # - ${PWD}/cdn.log:/app/cdn.log
+      # - ${PWD}/cdn.db:/app/cdn.db
+#networks:
+ # bridge:
+  #  external:
+   #   name: bridge

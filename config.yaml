@@ -1,0 +1,15 @@
+DATABASE:
+  NAME: "cdn.db"
+
+SEP: "__"
+MAX_SIZE: 250000
+ALLOWED_FILETYPE: "application/pdf"
+VIEW_URL: "http://localhost:3000/cdn/view/"
+
+FOLDERS:
+  CDN: "cdn"
+  ZIP: "zip"
+
+SECRET: "secret"
+
+PORT: ":80"
