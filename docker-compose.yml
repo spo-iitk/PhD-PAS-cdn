@@ -6,7 +6,7 @@ services:
     restart: always
     # network_mode: bridge
     ports:
-      - "8080:80"
+      - "8081:80"
     volumes:
       - ${PWD}/cdn:/app/cdn
       - ${PWD}/zip:/app/zip
